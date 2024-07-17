@@ -1,0 +1,23 @@
+//
+// Custom Variables
+//
+// Here you can add your own variables overrides
+//
+// The file is included before any other variable file,
+// so you can override them because they all use !default
+// --------------------------------------------------
+
+// For example, changing the primary color
+// $brand-primary: #3b5998;
+$gray-100:                  #f5fafd !default;
+$gray-200:                  #e9ecef !default;
+$gray-300:                  #dee2e6 !default;
+$gray-400:                  #aaaaaa !default;
+$gray-500:                  #adb5bd !default;
+$gray-600:                  #868e96 !default;
+$gray-700:                  #495057 !default;
+$gray-800:                  #343a40 !default;
+$gray-900:                  #343434 !default;
+$cyan:                      #40c2c0 !default;
+$dark-blue:                 #17a2b8 !default;
+$dark-gray:                 #868e96 !default;

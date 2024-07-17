@@ -1,0 +1,39 @@
+.popover {
+    min-width: 215px;
+    border-width: 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+
+    .popover-body {
+        background-color: var(--popover-bg);
+        color: var(--popover-text);
+
+        .title {
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    &.bs-popover-top,
+    &.bs-popover-auto[x-placement^=top] {
+        .arrow {
+            &:before {
+                border-top: 0;
+            }
+            &:after {
+                border-top-color: var(--popover-bg);
+            }
+        }
+    }
+
+    &.bs-popover-bottom,
+    &.bs-popover-auto[x-placement^=bottom] {
+        .arrow {
+            &:before {
+                border-bottom: 0;
+            }
+            &:after {
+                border-bottom-color: var(--popover-bg);
+            }
+        }
+    }
+}

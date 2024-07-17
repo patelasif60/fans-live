@@ -1,0 +1,16 @@
+//
+// Slick
+//
+// Overwrite/Extend styles
+// --------------------------------------------------
+
+.slick-slider {
+
+    .slick-prev,
+    .slick-next {
+
+        &::before {
+            font-family: 'Font Awesome 5 Pro';
+        }
+    }
+}

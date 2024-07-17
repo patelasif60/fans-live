@@ -1,0 +1,39 @@
+.custom-listing-table {
+	th {
+		cursor: pointer;
+        position: relative;
+
+		&:after {
+            position: absolute;
+            right: 0;
+            top: 11px;
+			font-family: 'Font Awesome 5 Pro';
+		    font-size: 14px;
+		    opacity:0.6;
+		}
+
+        &.sorting,
+        &.sorting_asc,
+        &.sorting_desc {
+            padding-right: 15px;
+        }
+
+	    &.sorting {
+	    	&:after {
+    			content: "\F0DC";
+    		}
+    	}
+
+    	&.sorting_asc {
+    		&:after {
+    			content: "\f106";
+    		}
+    	}
+        
+    	&.sorting_desc {
+    		&:after {
+    			content: "\f107";
+    		}
+    	}
+	}
+}

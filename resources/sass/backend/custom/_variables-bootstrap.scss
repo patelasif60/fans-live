@@ -1,0 +1,6 @@
+$theme-colors: map-merge((
+  "darker": $gray-900,
+  "cyan": $cyan,
+  "dark-blue": $dark-blue,
+  "dark-gray": $dark-gray
+), $theme-colors);

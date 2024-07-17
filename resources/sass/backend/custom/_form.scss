@@ -1,0 +1,15 @@
+label.required::after {
+    content: '*';
+    display: inline-block;
+    color: theme-color("danger");
+}
+.cke_editor_js-ckeditor.is-invalid, .cke.is-invalid {
+	border: 1px solid theme-color("danger");
+}
+
+.quizCheckbox + .custom-control-label {
+	&::before, 
+	&::after {
+    	top: 9px;
+    }
+}

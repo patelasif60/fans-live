@@ -1,0 +1,12 @@
+// Importing fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+// Bootstrap popover
+@import 'vendor/popover';
+
+@import 'mixin/mixin';
+@import 'root';
+@import 'components/buttons';
+@import 'components/popover';
+@import 'seat-allocation/pickseat';
+@import 'seat-allocation/pickblock';

@@ -1,0 +1,36 @@
+//
+// Main Navigation
+// --------------------------------------------------
+
+// Sidebar
+.nav-main {
+    // Default links
+    a {
+        &.nav-submenu::before,
+        &.nav-submenu::after {
+            @extend %fa-icon;
+            @extend .fal;
+        }
+    }
+}
+
+// Header
+.nav-main-header {
+    @include media-breakpoint-up(lg) {
+        // Default links
+        a {
+            &.nav-submenu::before {
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+                font-family: 'Font Awesome 5 Pro';
+                font-weight: 300
+            }
+        }
+    }
+}
+

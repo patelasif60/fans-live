@@ -1,0 +1,94 @@
+.screen-wrapper {
+    max-width: 768px;
+    padding: 60px 0;
+    margin: 0 auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .seat-area {
+        .seat-line {
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            flex-wrap: nowrap;
+
+            > span {
+                position: sticky;
+                left: -1px;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 0 0 30px;
+                height: 30px;
+                background: #fff;
+                margin-right: 10px;
+                z-index: 1;
+            }
+
+            > ul {
+                display: flex;
+
+                .single-seat {
+                    margin: 3px;
+
+                    .seat-block {
+                        width: 30px;
+                        height: 30px;
+                        background-color: #fff;
+                        transition: 0.1s;
+                    }
+
+                    &.is-disabled {
+                        .seat-block {
+                            padding: 5px;
+                            background-color: var(--bg-seat-block);
+
+                            svg {
+                                width: 100%;
+                                height: auto;
+                                vertical-align: initial;
+                            }
+                        }
+                    }
+
+                    &.is-booked {
+                        .seat-block {
+                            padding: 5px;
+                            background-color: var(--bg-seat-block);
+                        }
+                    }
+
+                    &.is-stairs {
+                        .seat-block {
+                            svg {
+                                width: 100%;
+                                height: auto;
+                                vertical-align: initial;
+                            }
+                        }
+                    }
+
+                    &.is-available {
+                        .seat-block {
+                            cursor: pointer;
+                            background: lighten(var(--bg-selected-seat-block), 0.6);
+                        }
+                    }
+
+                    &.is-picked {
+                        .seat-block {
+                            background-color: var(--bg-selected-seat-block);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

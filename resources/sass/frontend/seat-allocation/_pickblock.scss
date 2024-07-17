@@ -1,0 +1,15 @@
+.stadium-image-wrapper {
+    width: 780px;
+    overflow-x: auto;
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+    // 	height: auto;
+    }
+
+    area {
+    	cursor: pointer;
+    }
+}

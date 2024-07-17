@@ -1,0 +1,3 @@
+@function lighten($color, $opacity) {
+    @return unquote('linear-gradient(to top,rgba(255, 255, 255,'+ $opacity +'),rgba(255, 255, 255,' + $opacity + ')) ' + $color);
+}

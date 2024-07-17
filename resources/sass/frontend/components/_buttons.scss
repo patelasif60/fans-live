@@ -1,0 +1,37 @@
+.btn {
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-style: solid;
+
+    &.btn-block {
+        width: 100%;
+    }
+
+    &.btn-primary {
+        background-color: var(--button-bg);
+        border-color: var(--button-bg);
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            color: var(--button-bg);
+            background-color: transparent;
+            border-color: var(--button-bg);
+        }
+    }
+
+    &.btn-danger {
+        background-color: var(--danger);
+        border-color: var(--danger);
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            color: var(--danger);
+            background-color: transparent;
+            border-color: var(--danger);
+        }
+    }
+}

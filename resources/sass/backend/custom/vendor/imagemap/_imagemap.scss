@@ -1,0 +1,6 @@
+#nav a:active, #nav .selected a {
+	background: $brand-primary;
+	color: $white;
+	border: 1px solid $brand-primary;
+	box-shadow: none;
+}

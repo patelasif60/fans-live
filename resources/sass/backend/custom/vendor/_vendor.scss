@@ -1,0 +1,22 @@
+//
+// Custom Vendor
+//
+// Add your own styles or override existing ones
+// --------------------------------------------------
+
+// If you have many custom styles, you can create and import additional files
+@import "~bootstrap/scss/_functions.scss";
+@import 'variables';
+
+@import 'toastr/toastr';
+// Font Awesome 5 Pro
+@import 'fontawesome5-pro/fontawesome';
+@import 'fontawesome5-pro/brands';
+@import 'fontawesome5-pro/light';
+// @import 'fontawesome5-pro/regular';
+// @import 'fontawesome5-pro/solid';
+// Date time picker
+@import 'tempusdominus-bootstrap-4/tempusdominus-bootstrap-4-build';
+// Slick carousel
+@import 'slick/slick';
+@import 'imagemap/imagemap';
